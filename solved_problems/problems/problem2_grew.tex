@@ -1,0 +1,66 @@
+\begin{task}
+Определить отклик выхода RL-цепи, изображенной на рисунке, на воздействие прямоугольного импульса длительностью $\tau_0$. Нарисовать график $u_\out(t)$. При выполнении какого условия будет осуществляться приближенное интегрирование входной цепи? 
+\end{task}
+
+\begin{proof}[\rm{\textbf{Решение}}]
+Эквивалентная схема (картиночка)
+ \begin{equation}
+	u_\in(t)\risingdotseq \frac{A}{p}-\frac{A}{p}\cdot e^{-p\tau}=\frac{A}{p}(1-e^{-p\tau})
+\end{equation}
+По второму правилу Кирхгофа:
+\begin{equation}
+	\frac{A}{p} (1-e^{-p\tau}) + i_L(0)L=(pL+R)I(p)
+\end{equation}
+\begin{equation}
+	I(p)=\frac{\frac{A}{p}(1-e^{-p\tau})}{pL+R} + 
+		\frac{i_L(0)L}{pL+R}
+\end{equation}
+С другой стороны,
+\begin{gather}
+\frac{A}{p}(1-e^{-p\tau})=
+	I(p)R+u_L(p) \Rightarrow \\
+%
+u_L(p) = 
+	\frac{A}{p}(1-e^{-p\tau})-I(p)R =
+	\frac{A}{p}(1-e^{-p\tau}) - 
+		\frac{\frac{AR}{p}(1-e^{-p\tau}}{pL+R} - 
+		\frac{i_L(0)LR}{pL+R} = \\ =
+%
+\frac{A}{p}(1-e^{-p\tau}) - 
+	\frac{A\frac{R}{L}}{p(p+\frac{R}{L}} + 
+	\frac{A\frac{R}{L}}{p(p+\frac{R}{L})}e^{-p\tau} - 
+	\frac{i_L(0)R}{p+\frac{R}{L}} \LT \\ \LT
+%  
+\cancel{A\H(t)}-
+	\cancel{A\H({t}-\tau)}-
+	A(\cancel{1}-e^{-\frac{Rt}{L}}) \H(t) +
+	A(\cancel{1}-e^{-\frac{R}{L}(t-\tau)}) \H(t-\tau) - 
+	i_L(0)Re^{\frac{-R}{L}t} \H(t) = \\=
+%
+Ae^{-\frac{Rt}{L}}\cdot \H(t)-
+	Ae^{-\frac{R(t-\tau)}{L}}\cdot \H(t-\tau)-
+	i_L(0)Re^{-\frac{Rt}{L}}\cdot \H(t)
+\end{gather}
+Итак,
+\begin{equation}
+u_L(t)=
+(A-i_L(0)R)e^{-\frac{Rt}{L}}\cdot \H(t) - 
+	Ae^{-\frac{R(t-\tau)}{L}}\cdot \H(t-\tau)
+\end{equation}
+Нам надо
+\begin{gather}
+	u_R(p)=I(p)R=
+		\frac{AR(1-e^{-p\tau})}{p(pL+R)}+
+		\frac{i_L(0)RL}{pL+R}=
+	\frac{\frac{AR}{L}(1-e^{-p\tau})}{p(p+\frac{R}{L}}+
+		\frac{i_L(0)R}{p+\frac{R}{L}}\LT \\ \LT 
+	A(1-e^{-\frac{Rt}{L}})\cdot \H(t)-
+		A(1-e^{-\frac{R(t-\tau)}{L}})\cdot \H(t-\tau)+
+		i_L(0)Re^{-\frac{Rt}{L}}\cdot \H(t)
+\end{gather}
+\paragraph{Условие интегрирования.} 
+\begin{gather}
+	u_\out(t)=A(1-e^{-\frac{Rt}{L}})\cdot \H(t)-A(1-e^{-\frac{R(t-\tau)}{L}})\cdot \H(t-\tau)+i_L(0)Re^{-\frac{Rt}{L}}\cdot \H(t) 
+\\\tau?>>\tau |\frac{L}{R}>>\tau_| 
+\end{gather}
+\end{proof}
