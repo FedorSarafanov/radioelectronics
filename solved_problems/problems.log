@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.10.31)  19 JAN 2019 19:59
-=======
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.11.20)  19 JAN 2019 19:25
->>>>>>> master
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.10.31)  19 JAN 2019 20:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -261,16 +257,16 @@ File: uni-global.def 2013/05/13 UCS: Unicode global data
 \uc@temptokena=\toks18
 )
 (c:/texlive/2018/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2018/11/13 3.27 The Babel package
+Package: babel 2018/10/16 3.26 The Babel package
 
 (c:/texlive/2018/texmf-dist/tex/generic/babel/switch.def
-File: switch.def 2018/11/13 3.27 Babel switching mechanism
+File: switch.def 2018/10/16 3.26 Babel switching mechanism
 )
 (c:/texlive/2018/texmf-dist/tex/generic/babel-russian/russianb.ldf
 Language: russian 2017/08/12 1.3j Russian support for the Babel system
 
 (c:/texlive/2018/texmf-dist/tex/generic/babel/babel.def
-File: babel.def 2018/11/13 3.27 Babel common definitions
+File: babel.def 2018/10/16 3.26 Babel common definitions
 \babel@savecnt=\count89
 \U@D=\dimen104
 
@@ -366,10 +362,10 @@ Package: physics
 
 (c:/texlive/2018/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
 (c:/texlive/2018/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2018-10-31 L3 programming layer (loader) 
+Package: expl3 2018-10-26 L3 programming layer (loader) 
 
 (c:/texlive/2018/texmf-dist/tex/latex/l3kernel/expl3-code.tex
-Package: expl3 2018-10-31 L3 programming layer (code)
+Package: expl3 2018-10-26 L3 programming layer (code)
 \c_max_int=\count103
 \l_tmpa_int=\count104
 \l_tmpb_int=\count105
@@ -516,7 +512,7 @@ Package: expl3 2018-10-31 L3 programming layer (code)
 \l__seq_internal_b_int=\count186
 )
 (c:/texlive/2018/texmf-dist/tex/latex/l3kernel/l3pdfmode.def
-File: l3pdfmode.def 2018-10-31 v L3 Experimental driver: PDF mode
+File: l3pdfmode.def 2018-10-26 v L3 Experimental driver: PDF mode
 \l__driver_color_stack_int=\count187
 ))
 Package: xparse 2018-10-17 L3 Experimental document command parser
@@ -1041,12 +1037,8 @@ Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
 \symrsfs=\mathgroup6
 )
 (c:/texlive/2018/texmf-dist/tex/latex/lipsum/lipsum.sty
-<<<<<<< HEAD
 Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
 \c@lips@count=\count301
-=======
-Package: lipsum 2018/11/07 v2.0 150 paragraphs of Lorem Ipsum dummy text
->>>>>>> master
 )
 (c:/texlive/2018/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
@@ -1056,26 +1048,15 @@ Package: mathtools 2018/01/08 v1.21 mathematical typesetting tools
 
 (c:/texlive/2018/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-<<<<<<< HEAD
 \calc@Acount=\count302
 \calc@Bcount=\count303
 \calc@Adimen=\dimen273
 \calc@Bdimen=\dimen274
-=======
-\calc@Acount=\count300
-\calc@Bcount=\count301
-\calc@Adimen=\dimen271
-\calc@Bdimen=\dimen272
->>>>>>> master
 \calc@Askip=\skip67
 \calc@Bskip=\skip68
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-<<<<<<< HEAD
 \calc@Ccount=\count304
-=======
-\calc@Ccount=\count302
->>>>>>> master
 \calc@Cskip=\skip69
 )
 (c:/texlive/2018/texmf-dist/tex/latex/mathtools/mhsetup.sty
@@ -1085,13 +1066,8 @@ LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
-<<<<<<< HEAD
 \g_MT_multlinerow_int=\count305
 \l_MT_multwidth_dim=\dimen275
-=======
-\g_MT_multlinerow_int=\count303
-\l_MT_multwidth_dim=\dimen273
->>>>>>> master
 \origjot=\skip70
 \l_MT_shortvdotswithinadjustabove_dim=\dimen276
 \l_MT_shortvdotswithinadjustbelow_dim=\dimen277
@@ -1109,7 +1085,6 @@ LaTeX Warning: Label `fig:4.2' multiply defined.
 )
 \openout1 = `problems.aux'.
 
-<<<<<<< HEAD
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 84.
 LaTeX Font Info:    ... okay on input line 84.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 84.
@@ -1128,34 +1103,11 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 84.
 LaTeX Font Info:    ... okay on input line 84.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 84.
 LaTeX Font Info:    ... okay on input line 84.
-
-(c:/texlive/2018/texmf-dist/tex/latex/ucs/ucsencs.def
-=======
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
  (c:/texlive/2018/texmf-dist/tex/latex/ucs/ucsencs.def
->>>>>>> master
 File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 )
 (c:/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-<<<<<<< HEAD
 \scratchcounter=\count306
 \scratchdimen=\dimen282
 \scratchbox=\box81
@@ -1167,19 +1119,6 @@ File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 \MPnumerator=\count310
 \makeMPintoPDFobject=\count311
 \everyMPtoPDFconversion=\toks47
-=======
-\scratchcounter=\count304
-\scratchdimen=\dimen280
-\scratchbox=\box80
-\nofMPsegments=\count305
-\nofMParguments=\count306
-\everyMPshowfont=\toks45
-\MPscratchCnt=\count307
-\MPscratchDim=\dimen281
-\MPnumerator=\count308
-\makeMPintoPDFobject=\count309
-\everyMPtoPDFconversion=\toks46
->>>>>>> master
 ) (c:/texlive/2018/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -1241,11 +1180,7 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 (c:/texlive/2018/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-<<<<<<< HEAD
 \c@section@level=\count312
-=======
-\c@section@level=\count310
->>>>>>> master
 )
 LaTeX Info: Redefining \ref on input line 84.
 LaTeX Info: Redefining \pageref on input line 84.
@@ -1294,12 +1229,12 @@ Package Fancyhdr Warning: \headheight is too small (14.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [2] (./problems/problem2_grew.tex
-<chem/task2.pdf, id=54, 125.31317pt x 78.51433pt>
+<chem/task2.pdf, id=58, 125.31317pt x 78.51433pt>
 File: chem/task2.pdf Graphic file (type pdf)
 <use chem/task2.pdf>
 Package pdftex.def Info: chem/task2.pdf  used on input line 16.
 (pdftex.def)             Requested size: 216.23764pt x 135.48285pt.
-<ris/task2_input.pdf, id=55, 97.90076pt x 92.43333pt>
+<ris/task2_input.pdf, id=59, 97.90076pt x 92.43333pt>
 File: ris/task2_input.pdf Graphic file (type pdf)
 <use ris/task2_input.pdf>
 Package pdftex.def Info: ris/task2_input.pdf  used on input line 23.
@@ -1319,7 +1254,7 @@ LaTeX Font Info:    Try loading font information for U+BOONDOX-ds on input line
 File: uboondox-ds.fd 2011/04/26 Fontinst v1.933 font definitions for U/BOONDOX-
 ds.
 )
-<ris/task2_out.pdf, id=92, 97.90076pt x 92.43132pt>
+<ris/task2_out.pdf, id=96, 97.90076pt x 92.43132pt>
 File: ris/task2_out.pdf Graphic file (type pdf)
 <use ris/task2_out.pdf>
 Package pdftex.def Info: ris/task2_out.pdf  used on input line 111.
@@ -1345,42 +1280,28 @@ Package Fancyhdr Warning: \headheight is too small (14.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-<<<<<<< HEAD
 [6])
-=======
-[4]) (./problems/problem4/problem4_grew.tex
-<problems/problem4/chem4.pdf, id=74, 143.49408pt x 73.0489pt>
-File: problems/problem4/chem4.pdf Graphic file (type pdf)
-<use problems/problem4/chem4.pdf>
-Package pdftex.def Info: problems/problem4/chem4.pdf  used on input line 4.
-(pdftex.def)             Requested size: 270.3012pt x 137.6262pt.
-
->>>>>>> master
 
 Package Fancyhdr Warning: \headheight is too small (14.0pt): 
  Make it at least 17.0pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-<<<<<<< HEAD
-[7]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 129.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 129.
- (./problems.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 129.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 129.
-Package rerunfilecheck Info: File `problems.out' has not changed.
-(rerunfilecheck)             Checksum: 3B048A90911244E8D2111AB5018D4841;1064.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 129.
- ) 
-Here is how much of TeX's memory you used:
- 32745 strings out of 492639
- 577602 string characters out of 6133087
- 726647 words of memory out of 5000000
- 36169 multiletter control sequences out of 15000+600000
-=======
-[5 <./problems/problem4/chem4.pdf>]
-<problems/problem4/problem4_grew.pdf, id=92, 462.52798pt x 346.89601pt>
+[7] (./problems/problem4/problem4_grew.tex
+<problems/problem4/chem4.pdf, id=130, 143.49408pt x 73.0489pt>
+File: problems/problem4/chem4.pdf Graphic file (type pdf)
+<use problems/problem4/chem4.pdf>
+Package pdftex.def Info: problems/problem4/chem4.pdf  used on input line 4.
+(pdftex.def)             Requested size: 270.3012pt x 137.6262pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (14.0pt): 
+ Make it at least 17.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[8 <./problems/problem4/chem4.pdf>]
+<problems/problem4/problem4_grew.pdf, id=144, 462.52798pt x 346.89601pt>
 File: problems/problem4/problem4_grew.pdf Graphic file (type pdf)
 <use problems/problem4/problem4_grew.pdf>
 Package pdftex.def Info: problems/problem4/problem4_grew.pdf  used on input lin
@@ -1390,39 +1311,40 @@ e 60.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
+)
 
 Package Fancyhdr Warning: \headheight is too small (14.0pt): 
  Make it at least 17.0pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[6])
+[9]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 131.
+
 
 Package Fancyhdr Warning: \headheight is too small (14.0pt): 
  Make it at least 17.0pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[7 <./problems/problem4/problem4_grew.pdf>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 127.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 127.
+[10 <./problems/problem4/problem4_grew.pdf>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 131.
  (./problems.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 127.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 127.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 131.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 131.
 Package rerunfilecheck Info: File `problems.out' has not changed.
 (rerunfilecheck)             Checksum: 6DF8C688D71012D9AE61E4F84B0B2138;1190.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 127.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 131.
  ) 
 Here is how much of TeX's memory you used:
- 32637 strings out of 492639
- 578609 string characters out of 6133087
- 779624 words of memory out of 5000000
- 36064 multiletter control sequences out of 15000+600000
->>>>>>> master
+ 32767 strings out of 492639
+ 578136 string characters out of 6133087
+ 726750 words of memory out of 5000000
+ 36179 multiletter control sequences out of 15000+600000
  543565 words of font info for 51 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,18n,65p,615b,622s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1443,22 +1365,12 @@ m-super/sfbx1728.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sf
 bx2074.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb
 ><c:/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb><c:/texli
 ve/2018/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb><c:/texlive/2018/te
-<<<<<<< HEAD
-xmf-dist/fonts/type1/public/boondox/zxxrl8a.pfb>
-Output written on problems.pdf (7 pages, 212695 bytes).
-PDF statistics:
- 190 PDF objects out of 1000 (max. 8388607)
- 148 compressed objects within 2 object streams
- 18 named destinations out of 1000 (max. 500000)
- 88 words of extra memory for PDF output out of 10000 (max. 10000000)
-=======
 xmf-dist/fonts/type1/public/cm-super/sfss1095.pfb><c:/texlive/2018/texmf-dist/f
 onts/type1/public/boondox/zxxrl8a.pfb>
-Output written on problems.pdf (7 pages, 389326 bytes).
+Output written on problems.pdf (10 pages, 411140 bytes).
 PDF statistics:
- 194 PDF objects out of 1000 (max. 8388607)
- 156 compressed objects within 2 object streams
- 19 named destinations out of 1000 (max. 500000)
- 91 words of extra memory for PDF output out of 10000 (max. 10000000)
->>>>>>> master
+ 244 PDF objects out of 1000 (max. 8388607)
+ 196 compressed objects within 2 object streams
+ 25 named destinations out of 1000 (max. 500000)
+ 106 words of extra memory for PDF output out of 10000 (max. 10000000)
 
