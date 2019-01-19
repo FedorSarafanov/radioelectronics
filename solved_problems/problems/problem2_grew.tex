@@ -1,66 +1,88 @@
+%!TEX root = ../problems.tex
+
 \begin{task}
-Определить отклик выхода RL-цепи, изображенной на рисунке, на воздействие прямоугольного импульса длительностью $\tau_0$. Нарисовать график $u_\out(t)$. При выполнении какого условия будет осуществляться приближенное интегрирование входной цепи? 
+Определить отклик выхода RL-цепи, изображенной на рисунке, на воздействие прямоугольного импульса длительностью $\tau_0$. Нарисовать график $u_\out\qty(t)$. При выполнении какого условия будет осуществляться приближенное интегрирование входной цепи? 
 \end{task}
 
 \begin{proof}[\rm{\textbf{Решение}}]
 Эквивалентная схема (картиночка)
  \begin{equation}
-	u_\in(t)\risingdotseq \frac{A}{p}-\frac{A}{p}\cdot e^{-p\tau}=\frac{A}{p}(1-e^{-p\tau})
+	u_\in\qty(t)\risingdotseq \frac{A}{p}-\frac{A}{p}\cdot e^{-p\tau}=\frac{A}{p}\qty(1-e^{-p\tau})
 \end{equation}
-По второму правилу Кирхгофа:
+По второму правилу Кирхгофа, сумма падений напряжения на всех элементах цепи равна ЭДС. В нашем случае возможное начальное напряжение на катушке мы относим к ЭДС, а сумму падений напряжения записываем как ток в контуре на суммарный импеданс контура:
 \begin{equation}
-	\frac{A}{p} (1-e^{-p\tau}) + i_L(0)L=(pL+R)I(p)
+	\eds=Z(p)\cdot I(p) \quad \Rightarrow \quad
+	\frac{A}{p} \qty(1-e^{-p\tau}) + i_L\qty(0)L=\qty(pL+R)I\qty(p)
 \end{equation}
+Отсюда выражаем ток в контуре:
 \begin{equation}
-	I(p)=\frac{\frac{A}{p}(1-e^{-p\tau})}{pL+R} + 
-		\frac{i_L(0)L}{pL+R}
+	I\qty(p)=\frac{\frac{A}{p}\qty(1-e^{-p\tau})}{pL+R} + 
+		\frac{i_L\qty(0)L}{pL+R}
 \end{equation}
-С другой стороны,
+% С другой стороны, $u_\in=u_R+u_L$, и отсюда
+% \begin{gather}
+% \frac{A}{p}\qty(1-e^{-p\tau})=
+% 	I\qty(p)R+u_L\qty(p) \Rightarrow \\
+% %
+% u_L\qty(p) = 
+% 	\frac{A}{p}\qty(1-e^{-p\tau})-I\qty(p)R =
+% 	\frac{A}{p}\qty(1-e^{-p\tau}) - 
+% 		\frac{\frac{AR}{p}\qty(1-e^{-p\tau})}{pL+R} - 
+% 		\frac{i_L\qty(0)LR}{pL+R} = \\ =
+% %
+% \frac{A}{p}\qty(1-e^{-p\tau}) - 
+% 	\frac{A\frac{R}{L}}{p\qty(p+\frac{R}{L})} + 
+% 	\frac{A\frac{R}{L}}{p\qty(p+\frac{R}{L})}e^{-p\tau} - 
+% 	\frac{i_L\qty(0)R}{p+\frac{R}{L}} \LT \\ \LT
+% %  
+% \cancel{A\H\qty(t)}-
+% 	\cancel{A\H\qty({t}-\tau)}-
+% 	A\qty(\cancel{1}-e^{-\frac{Rt}{L}}) \H\qty(t) +
+% 	A\qty(\cancel{1}-e^{-\frac{R}{L}\qty(t-\tau)}) \H\qty(t-\tau) - 
+% 	i_L\qty(0)Re^{\frac{-R}{L}t} \H\qty(t) = \\=
+% %
+% Ae^{-\frac{Rt}{L}}\cdot \H\qty(t)-
+% 	Ae^{-\frac{R\qty(t-\tau)}{L}}\cdot \H\qty(t-\tau)-
+% 	i_L\qty(0)Re^{-\frac{Rt}{L}}\cdot \H\qty(t)
+% \end{gather}
+% Отсюда получаем окончательно выражение для напряжения на индуктивности:
+% \begin{equation}
+% u_L\qty(t)=
+% \qty(A-i_L\qty(0)R)e^{-\frac{Rt}{L}}\cdot \H\qty(t) - 
+% 	Ae^{-\frac{R\qty(t-\tau)}{L}}\cdot \H\qty(t-\tau)
+% \end{equation}
+% Нам надо
+Теперь мы можем найти и выходное напряжение -- напряжение на резисторе:
 \begin{gather}
-\frac{A}{p}(1-e^{-p\tau})=
-	I(p)R+u_L(p) \Rightarrow \\
-%
-u_L(p) = 
-	\frac{A}{p}(1-e^{-p\tau})-I(p)R =
-	\frac{A}{p}(1-e^{-p\tau}) - 
-		\frac{\frac{AR}{p}(1-e^{-p\tau}}{pL+R} - 
-		\frac{i_L(0)LR}{pL+R} = \\ =
-%
-\frac{A}{p}(1-e^{-p\tau}) - 
-	\frac{A\frac{R}{L}}{p(p+\frac{R}{L}} + 
-	\frac{A\frac{R}{L}}{p(p+\frac{R}{L})}e^{-p\tau} - 
-	\frac{i_L(0)R}{p+\frac{R}{L}} \LT \\ \LT
-%  
-\cancel{A\H(t)}-
-	\cancel{A\H({t}-\tau)}-
-	A(\cancel{1}-e^{-\frac{Rt}{L}}) \H(t) +
-	A(\cancel{1}-e^{-\frac{R}{L}(t-\tau)}) \H(t-\tau) - 
-	i_L(0)Re^{\frac{-R}{L}t} \H(t) = \\=
-%
-Ae^{-\frac{Rt}{L}}\cdot \H(t)-
-	Ae^{-\frac{R(t-\tau)}{L}}\cdot \H(t-\tau)-
-	i_L(0)Re^{-\frac{Rt}{L}}\cdot \H(t)
+	u_\out (p) \equiv u_R\qty(p)=I\qty(p)R=
+		\frac{AR\qty(1-e^{-p\tau})}{p\qty(pL+R)}+
+		\frac{i_L\qty(0)RL}{pL+R}=
+	\frac{\frac{AR}{L}\qty(1-e^{-p\tau})}{p\qty(p+\frac{R}{L})}+
+		\frac{i_L\qty(0)R}{p+\frac{R}{L}} 
+		=\\=
+	A\frac{\frac{R}{L}}{p\qty(p+\frac{R}{L})}-
+		A\frac{\frac{R}{L}}{p\qty(p+\frac{R}{L})}e^{-p\tau}+
+		i_L\qty(0)R\frac{1}{p+\frac{R}{L}} 
+		% \LT \\ \LT 
+	% A\qty(1-e^{-\frac{Rt}{L}})\cdot \H\qty(t)-
+		% A\qty(1-e^{-\frac{R\qty(t-\tau)}{L}})\cdot \H\qty(t-\tau)+
+		% i_L\qty(0)Re^{-\frac{Rt}{L}}\cdot \H\qty(t)
 \end{gather}
-Итак,
-\begin{equation}
-u_L(t)=
-(A-i_L(0)R)e^{-\frac{Rt}{L}}\cdot \H(t) - 
-	Ae^{-\frac{R(t-\tau)}{L}}\cdot \H(t-\tau)
-\end{equation}
-Нам надо
+Используя свойства преобразования Лапласа
 \begin{gather}
-	u_R(p)=I(p)R=
-		\frac{AR(1-e^{-p\tau})}{p(pL+R)}+
-		\frac{i_L(0)RL}{pL+R}=
-	\frac{\frac{AR}{L}(1-e^{-p\tau})}{p(p+\frac{R}{L}}+
-		\frac{i_L(0)R}{p+\frac{R}{L}}\LT \\ \LT 
-	A(1-e^{-\frac{Rt}{L}})\cdot \H(t)-
-		A(1-e^{-\frac{R(t-\tau)}{L}})\cdot \H(t-\tau)+
-		i_L(0)Re^{-\frac{Rt}{L}}\cdot \H(t)
+	\frac{\alpha}{p(p+\alpha)}\LT (1-e^{-\alpha t})\H(t)\\
+	\frac{1}{(p+\alpha)}\LT e^{-\alpha t}\H(t)\\
+	e^{{-p\tau}}F(p) \LT f(t-\tau)\H(t-\tau), \qq{где} F(p) \LT f(t)
 \end{gather}
+Из выражения $u_\out(p)$ элементарно получаем оригинал $u_\out(t)$:
+\begin{equation}
+	u_\out(t)=A\qty(1-e^{-\frac{Rt}{L}})\cdot \H\qty(t)-
+		A\qty(1-e^{-\frac{R\qty(t-\tau)}{L}})\cdot \H\qty(t-\tau)+
+		i_L\qty(0)Re^{-\frac{Rt}{L}}\cdot \H\qty(t)
+\end{equation}
 \paragraph{Условие интегрирования.} 
 \begin{gather}
-	u_\out(t)=A(1-e^{-\frac{Rt}{L}})\cdot \H(t)-A(1-e^{-\frac{R(t-\tau)}{L}})\cdot \H(t-\tau)+i_L(0)Re^{-\frac{Rt}{L}}\cdot \H(t) 
-\\\tau?>>\tau |\frac{L}{R}>>\tau_| 
+	% u_\out\qty(t)=A\qty(1-e^{-\frac{Rt}{L}})\cdot \H\qty(t)-A\qty(1-e^{-\frac{R\qty(t-\tau)}{L}})\cdot \H\qty(t-\tau)+i_L\qty(0)Re^{-\frac{Rt}{L}}\cdot \H\qty(t) 
+% \\\tau?>>\tau |\frac{L}{R}>>\tau_| 
 \end{gather}
 \end{proof}
