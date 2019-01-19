@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1547907239 "problems.tex" "problems.pdf" "problems" 1547907242
+["pdflatex"] 1547909638 "problems.tex" "problems.pdf" "problems" 1547909641
   "c:/Users/osabio/.texlive2018/texmf-var/fonts/tfm/lh/lh-t2a/labx1440.tfm" 1540835626 3304 6a543c07045572737981351171e0505e ""
   "c:/Users/osabio/.texlive2018/texmf-var/fonts/tfm/lh/lh-t2a/labx1728.tfm" 1540835621 3312 d199be9bd555944e2403193d58a0256a ""
   "c:/Users/osabio/.texlive2018/texmf-var/fonts/tfm/lh/lh-t2a/labx2074.tfm" 1543339064 3316 0992aa03d0c75498a0b6fb905d9eaab6 ""
@@ -178,7 +178,6 @@
   "c:/texlive/2018/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty" 1540833572 274 4cad6e665cc93ac2ac979039a94fa1e1 ""
   "c:/texlive/2018/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty" 1540833572 325 2bcd023400636339210573e2b3ee298b ""
   "c:/texlive/2018/texmf-dist/tex/latex/physics/physics.sty" 1540833597 29610 a9597219b282d9c78b02393dcd7d4322 ""
-  "c:/texlive/2018/texmf-dist/tex/latex/setspace/setspace.sty" 1540833905 22913 a27d7908fc6f0385466454a966a316eb ""
   "c:/texlive/2018/texmf-dist/tex/latex/tools/calc.sty" 1540989796 10212 357072c1d20578a30d6387d8a22e72ab ""
   "c:/texlive/2018/texmf-dist/tex/latex/tools/multicol.sty" 1540989796 30656 7d3c6c59eec44690b003639abb1d8a90 ""
   "c:/texlive/2018/texmf-dist/tex/latex/ucs/data/uni-33.def" 1540834283 8589 ed28b1c7dfc407d19d76bca04a0a8153 ""
@@ -194,14 +193,14 @@
   "c:/texlive/2018/texmf-var/web2c/pdftex/pdflatex.fmt" 1540990963 4218686 c58581623dc700ee6be6edfac165c6dc ""
   "c:/texlive/2018/texmf.cnf" 1540834531 673 4ae7b2f49cee444c5343a45b5d0f169c ""
   "nul" 0 0 d41d8cd98f00b204e9800998ecf8427e ""
-  "problems.aux" 1547907241 2451 9d262cdb720c1f262a93297da73edee1 ""
-  "problems.out" 1547907241 693 69ebb7dccc29722ffbdc831659c5d3cf ""
-  "problems.tex" 1547906509 3696 d881d783cdb4fe888a296de56bfe2040 ""
+  "problems.aux" 1547909641 3030 e4a86e9a908a2e2b3615fa3dff6063b0 ""
+  "problems.out" 1547909641 1064 3b048a90911244e8d2111ab5018d4841 ""
+  "problems.tex" 1547909611 4898 345ff2f11c654f456ae88db386fa1144 ""
   "problems/problem1_grew.tex" 1547841316 1496 8863b85a5972defcef360cc89fa0f8d8 ""
   "problems/problem2_grew.tex" 1547907236 4392 c77ff04b5f78b6f0c0898db0e1486940 ""
   "problems/problem3_grew.tex" 1547841450 4101 0f3ed113a3385ec3bcc99da8eeca2dca ""
   (generated)
-  "problems.out"
-  "problems.log"
   "problems.aux"
+  "problems.out"
   "problems.pdf"
+  "problems.log"
