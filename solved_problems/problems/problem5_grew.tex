@@ -1,0 +1,50 @@
+%!TEX root = ../problems.tex
+\begin{task}
+	Найти спектр прямоугольного сигнала $S(t)=A(-\H(t)+\H(t-t_1)$.
+	Нарисовать график $\abs{S(\omega)}$
+\end{task}
+
+\begin{proof}[\rm{\textbf{Решение}}]
+	Продифференцируем $S(t)$:
+	\begin{equation}
+		\dv{S}{t}=A(-\delta(t)+\delta(t-t_1))
+	\end{equation}
+	По свойству дифференцирования преобразования Фурье:
+	\begin{equation}
+		S'(\omega)=i \omega S(\omega) 
+		\Longrightarrow S(\omega)=\frac{S'(\omega)}{i \omega}
+	\end{equation}
+	\begin{gather*}
+		S'(\omega)=A\newint (\delta(t-t_1)-\delta(t))e^{-i \omega t} \dd{t}=\\
+		= A(-1 +e^{-i \omega t}) = A(e^{-i \omega t} -1)
+	\end{gather*}
+	Получаем:
+	\begin{equation}
+		S(\omega)=\frac{A}{i \omega} (e^{-i \omega t_1}-1)
+	\end{equation}
+	В дальнейшем $t_1 \equiv t $. Вынесем за скобки $e^{-i \omega t/2}$:
+	\begin{equation}
+		-\frac{A}{i \omega} e^{-\frac{i \omega t}{2}}
+		%
+		\underbrace{
+			(e^{\frac{i \omega t}{2}} 
+			-e^{-\frac{i \omega t}{2}})}
+		%
+		_{2i\sin(\frac{\omega t}{2})}=
+		%
+		\frac{-2A}{\omega}
+		e^{-\frac{i \omega t}{2}}
+		\cdot\sin(\frac{\omega t}{2})=\\
+		%
+		Ate^{-(\frac{i \omega}{2}-\pi)}\cdot 
+		\frac{\sin(\frac{\omega t}{2})}{\qty(\omega t/2)}
+	\end{equation}
+	И окончательный ответ:
+	\begin{equation}
+		\abs{S(\omega)}=At_1
+		\abs{\frac{\sin(\frac{\omega t_1}{2})}{\qty(\omega t_1/2)}},
+		\text{где } t_1 - \text{длительность прямоугольного импульса} 
+	\end{equation}
+	
+
+\end{proof} 
