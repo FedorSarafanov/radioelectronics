@@ -21,13 +21,9 @@
 		geometry,
 		multicol,
 		tikz,
-		hyperref,
-		setspace, %spacing
-		% ragged2e, % justifying
+		hyperref
 	}  
 
-\usepackage{mathrsfs} % буква для обозначения ЭДС 
-\newcommand{\eds}{\ensuremath{\mathscr{E}}} % новая команда \EDS для символа
 
 % Увеличенный межстрочный интервал, французские пробелы
 \linespread{1.3} 
@@ -49,6 +45,11 @@
 \chead{Экзамен по радиоэлектронике, зима 2019}
 \lhead{Типовые задачи}
 \cfoot{\thepage}
+
+
+\usepackage{mathrsfs} % буква для обозначения ЭДС 
+\newcommand{\eds}{\ensuremath{\mathscr{E}}} % новая команда \EDS для символа
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \gdef\rot{\operatorname{rot}} \gdef\div{\operatorname{div}}
@@ -86,6 +87,27 @@
 
 % \input{text/titlepage}
 
+
+\section{Таблица простейших преобразований Лапласа}
+\begin{center}
+\begin{tabular}{| c | c |}
+	\hline
+	Изображение                   & Оригинал($t\geq0$)              \\ \hline
+	1			                  & $\delta(t)$                     \\ \hline
+	$\frac1p$	                  & $1(t)$                          \\ \hline
+	$\frac{1}{p^2}$               & t                               \\ \hline
+	$\frac{1}{p+a}$               & $e^{-at}$                       \\ \hline
+	$\frac{1}{(p+a)^2}$           & $te^{-at}$                      \\ \hline
+	$\frac{p}{p+a}$               & $\delta(t)-ae^{-at}$            \\ \hline
+	$\frac{p}{(p+a)^2}$           & $(1-at) e^{-at}$                \\ \hline
+	$\frac{a}{p(p+a)}$            & $1-e^{-at}$                     \\ \hline
+	$\frac{1}{(p+a)(p+b)}$ & $\frac{1}{b-a} (e^{-at} -e^{-bt} ) $   \\ \hline
+	$\frac{p}{(p+a)(p+b)}$ & $\frac{1}{b-a} (be^{-bt} -ae^{-at} ) $ \\ \hline
+	$\frac{b^2}{p^2(p+b)}$        & $bt-(1-e^{-bt})$                \\ \hline
+	$\frac{\omega}{p^2+\omega^2}$ & $\sin{\omega t}$                \\ \hline
+	$\frac{p}{p^2+\omega^2}$      & $\cos{\omega t}$ 	            \\ \hline
+\end{tabular}
+\end{center}
 \section{Типовые задачи по радиоэлектронике}
 
 \subsection{Задача №1}
