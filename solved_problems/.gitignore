@@ -1,0 +1,16 @@
+*.pyc
+
+*.aux
+
+*.fdb_latexmk
+
+*.fls
+
+*.out
+
+*.log
+
+
+*.toc
+
+*.gz
