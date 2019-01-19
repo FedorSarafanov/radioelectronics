@@ -1,4 +1,20 @@
-
+%!TEX root = ../problems.tex
+\begin{figure}[h!]
+\centering
+\begin{minipage}{0.4\textwidth}
+\centering
+\includegraphics[width=\linewidth]{chem/task3}
+\caption{$RL$--контур}
+\label{fig:2figsA}
+\end{minipage}
+\qquad
+\begin{minipage}{0.4\textwidth}
+\centering
+\includegraphics[width=\linewidth]{ris/task2_input}
+\caption{Входное напряжение}
+\label{fig:2figsB}
+\end{minipage}
+\end{figure}
 \begin{task}
 	Определите отклик $u_\out(t)$ $RL$-цепи, изображенной на рисунке, на воздействие единичного импульса длительностью $\tau$. 
 	Нарисуйте график отклика. 
@@ -55,14 +71,26 @@
 \end{equation}
 Продифференцируем это выражение:
 \begin{equation}
-	\dv{u_\in}{t}=\underbrace{L\dv[2]{I}{t}}_{L\dv{u_L}{t}}+\frac{R}{L}\underbrace{L\dv{I}{t}}_{u_L\equiv u_\out}
+	\dv{u_\in}{t}=\underbrace{L\dv[2]{I}{t}}_{\dv{u_L}{t}}+\frac{R}{L}\underbrace{L\dv{I}{t}}_{u_L\equiv u_\out}
 \end{equation}
 Если будет выполнено условие
 \begin{equation}
-	\abs{L\dv{u_L}{t}} \ll \abs{\frac{R}{L} u_L}
+	\abs{\dv{u_L}{t}} \ll \abs{\frac{R}{L} u_L}
 \end{equation}
 Тогда будет видно, что цепочка осуществляет дифференцирование:
 \begin{equation}
-	u_\out=\frac{L}{R}\dv{u_\in}{t}
+	u_\out=\tau_\text{цепи}\dv{u_\in}{t}
 \end{equation}
+где $\tau_\text{цепи}=\frac{L}{R}$.
+
+Выясним смысл неравенства модулей на примере гармонических сигналов. Пусть входное напряжение гармоническое $u_\in=u_0e^{j\omega t}$. Тогда ток в контуре: $I=I_0e^{j\omega t}$, где $I_0=\frac{u_0}{j\omega L+R}$, и неравенство можно переписать (учтем, что $u_L=I\cdot j\omega L=I_0 j\omega L e^{j\omega t}$):
+\begin{equation}
+	\abs{I_0\cdot j\omega L\cdot j\omega\cdot e^{j\omega t}}\ll
+		\abs{\frac{1}{\tau_\text{цепи}}I_0 \cdot j\omega L\cdot e^{j\omega t}}
+	\quad \Rightarrow \quad
+	\omega \ll {\frac{1}{\tau_\text{цепи}}}
+	\quad \Rightarrow \quad
+	T \gg \tau_\text{цепи}
+\end{equation}
+Таким образом, дифференцирование сигнала <<чистое>> для таких частот, период которых много больше постоянной времени цепи. Отсюда следует <<вилка выбора>> дифференцирующей цепочки: если мы будем расширять частотный диапазон <<чистого>> дифференцирования уменьшением постоянной времени, то амплитуда на выходе цепочки будет падать, и наоборот.
 \end{proof}

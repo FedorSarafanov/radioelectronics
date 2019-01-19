@@ -14,8 +14,4 @@
 
 *.gz
 
-<<<<<<< HEAD:solved_problems/.gitignore
 *.synctex.gz
-=======
-*.synctex.gz
->>>>>>> master:.gitignore
