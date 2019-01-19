@@ -1,0 +1,21 @@
+*.pyc
+
+*.aux
+
+*.fdb_latexmk
+
+*.fls
+
+*.out
+
+*.log
+
+*.toc
+
+*.gz
+
+<<<<<<< HEAD:solved_problems/.gitignore
+*.synctex.gz
+=======
+*.synctex.gz
+>>>>>>> master:.gitignore
