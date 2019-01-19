@@ -21,8 +21,9 @@
 		geometry,
 		multicol,
 		tikz,
-		hyperref
+		wrapfig
 	}  
+\usepackage[hidelinks]{hyperref}
 
 
 % Увеличенный межстрочный интервал, французские пробелы
@@ -67,7 +68,7 @@
 
 \usepackage{lipsum}  
 \usepackage{ifthen}
-\newcommand{\frc}[2]{\raisebox{2pt}{$#1$}\big/\raisebox{-3pt}{$#2$}}
+\newcommand{\frc}[2]{\raisebox{2pt}{$\displaystyle#1$}\big/\raisebox{-3pt}{$\displaystyle#2$}}
 \usepackage{mathtools}  
 \mathtoolsset{showonlyrefs}  
 % \usepackage[export]{adjustbox}
@@ -90,37 +91,39 @@
 
 \section{Таблица простейших преобразований Лапласа}
 \begin{center}
+\renewcommand{\arraystretch}{1.7}
 \begin{tabular}{| c | c |}
 	\hline
-	Изображение                   & Оригинал($t\geq0$)              \\ \hline
-	1			                  & $\delta(t)$                     \\ \hline
-	$\frac1p$	                  & $1(t)$                          \\ \hline
-	$\frac{1}{p^2}$               & t                               \\ \hline
-	$\frac{1}{p+a}$               & $e^{-at}$                       \\ \hline
-	$\frac{1}{(p+a)^2}$           & $te^{-at}$                      \\ \hline
-	$\frac{p}{p+a}$               & $\delta(t)-ae^{-at}$            \\ \hline
-	$\frac{p}{(p+a)^2}$           & $(1-at) e^{-at}$                \\ \hline
-	$\frac{a}{p(p+a)}$            & $1-e^{-at}$                     \\ \hline
-	$\frac{1}{(p+a)(p+b)}$ & $\frac{1}{b-a} (e^{-at} -e^{-bt} ) $   \\ \hline
-	$\frac{p}{(p+a)(p+b)}$ & $\frac{1}{b-a} (be^{-bt} -ae^{-at} ) $ \\ \hline
-	$\frac{b^2}{p^2(p+b)}$        & $bt-(1-e^{-bt})$                \\ \hline
-	$\frac{\omega}{p^2+\omega^2}$ & $\sin{\omega t}$                \\ \hline
-	$\frac{p}{p^2+\omega^2}$      & $\cos{\omega t}$ 	            \\ \hline
+	Изображение                         & Оригинал($\displaystyle t\geq0$)              \\[0.9em] \hline
+	$\displaystyle1$			                                & $\displaystyle\delta(t)$                     \\ \hline
+	$\displaystyle\frac1p$	                          & $\displaystyle1(t)$                          \\[0.9em] \hline
+	$\displaystyle\frac{1}{p^2}$                     & $\displaystyle t$                              \\[0.9em] \hline
+	$\displaystyle\frac{1}{p+a}$                     & $\displaystyle e^{-at}$                       \\[0.9em] \hline
+	$\displaystyle\frac{1}{(p+a)^2}$                 & $\displaystyle te^{-at}$                      \\[0.9em] \hline
+	$\displaystyle\frac{p}{p+a}$                     & $\displaystyle\delta(t)-ae^{-at}$            \\[0.9em] \hline
+	$\displaystyle\frac{p}{(p+a)^2}$                 & $\displaystyle(1-at) e^{-at}$                \\[0.9em] \hline
+	$\displaystyle\frac{a}{p(p+a)}$                  & $\displaystyle1-e^{-at}$                     \\[0.9em] \hline
+	$\displaystyle\displaystyle\frac{1}{(p+a)(p+b)}$ & $\displaystyle\frac{1}{b-a} (e^{-at} -e^{-bt} ) $   \\[0.9em] \hline
+	$\displaystyle\frac{p}{(p+a)(p+b)}$              & $\displaystyle\frac{1}{b-a} (be^{-bt} -ae^{-at} ) $ \\[0.9em] \hline
+	$\displaystyle\frac{b^2}{p^2(p+b)}$              & $\displaystyle bt-(1-e^{-bt})$                \\[0.9em] \hline
+	$\displaystyle\frac{\omega}{p^2+\omega^2}$       & $\displaystyle\sin{\omega t}$                \\[0.9em] \hline
+	$\displaystyle\frac{p}{p^2+\omega^2}$            & $\displaystyle\cos{\omega t}$ 	            \\[0.9em] \hline
 \end{tabular}
 \end{center}
+\newpage
 \section{Типовые задачи по радиоэлектронике}
 
 \subsection{Задача №1}
 \input{problems/problem1_grew}
-
+\newpage
 
 \subsection{Задача №2}
 \input{problems/problem2_grew}
-
+\newpage
 
 \subsection{Задача №3}
 \input{problems/problem3_grew}
-
+\newpage
 
 
 \end{document}

@@ -1,4 +1,30 @@
 %!TEX root = ../problems.tex
+% \begin{figure}[h!]
+%   \vspace{-20pt}
+%   \begin{center}
+%     \includegraphics[scale=1.5]{chem/task2}
+%   \end{center}
+%   \vspace{-20pt}
+%   \caption{$RL$--контур}
+%   \vspace{-10pt}
+% \end{figure}
+
+\begin{figure}[h!]
+\centering
+\begin{minipage}{0.4\textwidth}
+\centering
+\includegraphics[width=\linewidth]{chem/task2}
+\caption{$RL$--контур}
+\label{fig:2figsA}
+\end{minipage}
+\qquad
+\begin{minipage}{0.4\textwidth}
+\centering
+\includegraphics[width=\linewidth]{ris/task2_input}
+\caption{Входное напряжение}
+\label{fig:2figsB}
+\end{minipage}
+\end{figure}
 
 \begin{task}
 Определить отклик выхода RL-цепи, изображенной на рисунке, на воздействие прямоугольного импульса длительностью $\tau_0$. Нарисовать график $u_\out\qty(t)$. При выполнении какого условия будет осуществляться приближенное интегрирование входной цепи? 
@@ -80,9 +106,45 @@
 		A\qty(1-e^{-\frac{R\qty(t-\tau)}{L}})\cdot \H\qty(t-\tau)+
 		i_L\qty(0)Re^{-\frac{Rt}{L}}\cdot \H\qty(t)
 \end{equation}
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.4\textwidth]{ris/task2_out.pdf}	
+	\caption{$u_\out(t)$}
+	% \label{fig:figure1}
+\end{figure}
+График построен при $i_L(0)R=\frac{A}{2}$
 \paragraph{Условие интегрирования.} 
-\begin{gather}
-	% u_\out\qty(t)=A\qty(1-e^{-\frac{Rt}{L}})\cdot \H\qty(t)-A\qty(1-e^{-\frac{R\qty(t-\tau)}{L}})\cdot \H\qty(t-\tau)+i_L\qty(0)Re^{-\frac{Rt}{L}}\cdot \H\qty(t) 
-% \\\tau?>>\tau |\frac{L}{R}>>\tau_| 
-\end{gather}
+Рассмотрим очевидное равенство $u_\in=u_L+u_\out$.
+Перепишем это выражение:
+\begin{equation}
+	u_\in=L\dv{I}{t}+\underbrace{IR}_{u_\out}
+\end{equation}
+Проинтегрируем его по времени:
+\begin{equation}
+	\int u_\in \dd{t}=
+		\frac{L}{R}\underbrace{IR}_{u_\out}+R\int I \dd{t}
+\end{equation}
+Если будет выполнено условие
+\begin{equation}
+	\label{eq:int}
+	% \abs{L\dv{u_L}{t}} \ll \abs{\frac{R}{L} u_L} \qquad
+	\abs{R\int I \dd{t}} \ll \abs{LI} \quad \Rightarrow \quad
+	\abs{\int I \dd{t}} \ll \abs{\frac{L}{R}I}
+\end{equation}
+То выходное напряжение с точностью до множителя интегрирует входное:
+\begin{equation}
+	u_\out=\frac{1}{\tau_\text{цепи}}\int u_\in \dd{t}
+\end{equation}
+где $\tau_\text{цепи}=\frac{L}{R}$.
+
+Выясним смысл неравенства модулей на примере гармонических сигналов. Пусть входное напряжение гармоническое $u_\in=u_0e^{j\omega t}$. Тогда ток в контуре: $I=I_0e^{j\omega t}$, где $I_0=\frac{u_0}{j\omega L+R}$, и неравенство (\ref{eq:int}) можно переписать:
+\begin{equation}
+	\abs{I_0\frac{1}{j\omega}e^{j\omega t}}\ll
+		\abs{{\tau_\text{цепи}}I_0e^{j\omega t}}
+	\quad \Rightarrow \quad
+	\frac{1}{\omega} \ll {\tau_\text{цепи}}
+	\quad \Rightarrow \quad
+	T \ll \tau_\text{цепи}
+\end{equation}
+Таким образом, интегрирование сигнала <<чистое>> для таких частот, период которых много меньше постоянной цепи. Отсюда следует <<вилка выбора>> интегрирующей цепочки: если мы будем расширять частотный диапазон <<чистого>> интегрирования, то амплитуда на выходе цепочки будет падать, и наоборот.
 \end{proof}

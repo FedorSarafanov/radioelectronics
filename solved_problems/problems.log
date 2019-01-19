@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.10.31)  19 JAN 2019 17:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.10.31)  19 JAN 2019 19:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -898,6 +898,14 @@ File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
 brarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
 )))
+(c:/texlive/2018/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+\wrapoverhang=\dimen267
+\WF@size=\dimen268
+\c@WF@wrappedlines=\count290
+\WF@box=\box80
+\WF@everypar=\toks45
+Package: wrapfig 2003/01/31  v 3.6
+)
 (c:/texlive/2018/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2018/09/30 v6.88a Hypertext links for LaTeX
 
@@ -950,14 +958,14 @@ Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 (c:/texlive/2018/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 )
-\@linkdim=\dimen267
-\Hy@linkcounter=\count290
-\Hy@pagecounter=\count291
+\@linkdim=\dimen269
+\Hy@linkcounter=\count291
+\Hy@pagecounter=\count292
 
 (c:/texlive/2018/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2018/09/30 v6.88a Hyperref: PDFDocEncoding definition (HO)
 )
-\Hy@SavedSpaceFactor=\count292
+\Hy@SavedSpaceFactor=\count293
 Package hyperref Info: Option `unicode' set `true' on input line 3475.
 
 (c:/texlive/2018/texmf-dist/tex/latex/hyperref/puenc.def
@@ -973,17 +981,17 @@ Package hyperref Info: Plain pages OFF on input line 4550.
 Package hyperref Info: Backreferencing OFF on input line 4555.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4788.
-\c@Hy@tempcnt=\count293
+\c@Hy@tempcnt=\count294
 
 (c:/texlive/2018/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5141.
-\XeTeXLinkMargin=\dimen268
-\Fld@menulength=\count294
-\Field@Width=\dimen269
-\Fld@charsize=\dimen270
+\XeTeXLinkMargin=\dimen270
+\Fld@menulength=\count295
+\Field@Width=\dimen271
+\Fld@charsize=\dimen272
 Package hyperref Info: Hyper figures OFF on input line 6396.
 Package hyperref Info: Link nesting OFF on input line 6401.
 Package hyperref Info: Hyper index ON on input line 6404.
@@ -993,16 +1001,16 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6421.
 Package hyperref Info: PDF/A mode OFF on input line 6426.
 LaTeX Info: Redefining \ref on input line 6466.
 LaTeX Info: Redefining \pageref on input line 6470.
-\Hy@abspage=\count295
-\c@Item=\count296
-\c@Hfootnote=\count297
+\Hy@abspage=\count296
+\c@Item=\count297
+\c@Hfootnote=\count298
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
 (c:/texlive/2018/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2018/09/30 v6.88a Hyperref driver for pdfTeX
-\Fld@listcount=\count298
-\c@bookmark@seq@number=\count299
+\Fld@listcount=\count299
+\c@bookmark@seq@number=\count300
 
 (c:/texlive/2018/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
@@ -1030,7 +1038,7 @@ Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
 )
 (c:/texlive/2018/texmf-dist/tex/latex/lipsum/lipsum.sty
 Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
-\c@lips@count=\count300
+\c@lips@count=\count301
 )
 (c:/texlive/2018/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
@@ -1040,15 +1048,15 @@ Package: mathtools 2018/01/08 v1.21 mathematical typesetting tools
 
 (c:/texlive/2018/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count301
-\calc@Bcount=\count302
-\calc@Adimen=\dimen271
-\calc@Bdimen=\dimen272
+\calc@Acount=\count302
+\calc@Bcount=\count303
+\calc@Adimen=\dimen273
+\calc@Bdimen=\dimen274
 \calc@Askip=\skip67
 \calc@Bskip=\skip68
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count303
+\calc@Ccount=\count304
 \calc@Cskip=\skip69
 )
 (c:/texlive/2018/texmf-dist/tex/latex/mathtools/mhsetup.sty
@@ -1058,56 +1066,56 @@ LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
-\g_MT_multlinerow_int=\count304
-\l_MT_multwidth_dim=\dimen273
+\g_MT_multlinerow_int=\count305
+\l_MT_multwidth_dim=\dimen275
 \origjot=\skip70
-\l_MT_shortvdotswithinadjustabove_dim=\dimen274
-\l_MT_shortvdotswithinadjustbelow_dim=\dimen275
-\l_MT_above_intertext_sep=\dimen276
-\l_MT_below_intertext_sep=\dimen277
-\l_MT_above_shortintertext_sep=\dimen278
-\l_MT_below_shortintertext_sep=\dimen279
+\l_MT_shortvdotswithinadjustabove_dim=\dimen276
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen277
+\l_MT_above_intertext_sep=\dimen278
+\l_MT_below_intertext_sep=\dimen279
+\l_MT_above_shortintertext_sep=\dimen280
+\l_MT_below_shortintertext_sep=\dimen281
 )
 (c:/texlive/2018/texmf-dist/tex/latex/cancel/cancel.sty
 Package: cancel 2013/04/12 v2.2 Cancel math terms
 ) (./problems.aux)
 \openout1 = `problems.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
 
 (c:/texlive/2018/texmf-dist/tex/latex/ucs/ucsencs.def
 File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 )
 (c:/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count305
-\scratchdimen=\dimen280
-\scratchbox=\box80
-\nofMPsegments=\count306
-\nofMParguments=\count307
-\everyMPshowfont=\toks45
-\MPscratchCnt=\count308
-\MPscratchDim=\dimen281
-\MPnumerator=\count309
-\makeMPintoPDFobject=\count310
-\everyMPtoPDFconversion=\toks46
+\scratchcounter=\count306
+\scratchdimen=\dimen282
+\scratchbox=\box81
+\nofMPsegments=\count307
+\nofMParguments=\count308
+\everyMPshowfont=\toks46
+\MPscratchCnt=\count309
+\MPscratchDim=\dimen283
+\MPnumerator=\count310
+\makeMPintoPDFobject=\count311
+\everyMPtoPDFconversion=\toks47
 ) (c:/texlive/2018/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -1160,8 +1168,8 @@ e
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 ABD: EveryShipout initializing macros
-\AtBeginShipoutBox=\box81
-Package hyperref Info: Link coloring OFF on input line 83.
+\AtBeginShipoutBox=\box82
+Package hyperref Info: Link coloring OFF on input line 84.
 
 (c:/texlive/2018/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -1169,11 +1177,11 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 (c:/texlive/2018/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count311
+\c@section@level=\count312
 )
-LaTeX Info: Redefining \ref on input line 83.
-LaTeX Info: Redefining \pageref on input line 83.
-LaTeX Info: Redefining \nameref on input line 83.
+LaTeX Info: Redefining \ref on input line 84.
+LaTeX Info: Redefining \pageref on input line 84.
+LaTeX Info: Redefining \nameref on input line 84.
 
 (./problems.out) (./problems.out)
 \@outlinefile=\write4
@@ -1183,25 +1191,21 @@ LaTeX Info: Redefining \nameref on input line 83.
 (c:/texlive/2018/texmf-dist/tex/latex/ucs/data/uni-4.def
 File: uni-4.def 2013/05/13 UCS: Unicode data U+0400..U+04FF
 )<<ot1.cmap>><<oml.cmap>><<oms.cmap>><<omx.cmap>>
-LaTeX Font Info:    Try loading font information for U+msa on input line 93.
+LaTeX Font Info:    Try loading font information for U+msa on input line 95.
 
 (c:/texlive/2018/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 93.
+LaTeX Font Info:    Try loading font information for U+msb on input line 95.
 
 (c:/texlive/2018/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 93.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 95.
 
 (c:/texlive/2018/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-(c:/texlive/2018/texmf-dist/tex/latex/ucs/data/uni-33.def
-File: uni-33.def 2013/05/13 UCS: Unicode data U+2100..U+21FF
-)
-(./problems/problem1_grew.tex
 
 Package Fancyhdr Warning: \headheight is too small (14.0pt): 
  Make it at least 17.0pt.
@@ -1210,57 +1214,91 @@ Package Fancyhdr Warning: \headheight is too small (14.0pt):
 
 [1{c:/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
-])
-(./problems/problem2_grew.tex
+]
+(c:/texlive/2018/texmf-dist/tex/latex/ucs/data/uni-33.def
+File: uni-33.def 2013/05/13 UCS: Unicode data U+2100..U+21FF
+)
+(./problems/problem1_grew.tex)
+
+Package Fancyhdr Warning: \headheight is too small (14.0pt): 
+ Make it at least 17.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[2] (./problems/problem2_grew.tex
+<chem/task2.pdf, id=54, 125.31317pt x 78.51433pt>
+File: chem/task2.pdf Graphic file (type pdf)
+<use chem/task2.pdf>
+Package pdftex.def Info: chem/task2.pdf  used on input line 16.
+(pdftex.def)             Requested size: 216.23764pt x 135.48285pt.
+<ris/task2_input.pdf, id=55, 97.90076pt x 92.43333pt>
+File: ris/task2_input.pdf Graphic file (type pdf)
+<use ris/task2_input.pdf>
+Package pdftex.def Info: ris/task2_input.pdf  used on input line 23.
+(pdftex.def)             Requested size: 216.23764pt x 204.18184pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (14.0pt): 
+ Make it at least 17.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[3 <./chem/task2.pdf> <./ris/task2_input.pdf>]
 LaTeX Font Info:    Try loading font information for U+BOONDOX-ds on input line
- 76.
+ 102.
 
 (c:/texlive/2018/texmf-dist/tex/latex/boondox/uboondox-ds.fd
 File: uboondox-ds.fd 2011/04/26 Fontinst v1.933 font definitions for U/BOONDOX-
 ds.
 )
+<ris/task2_out.pdf, id=92, 97.90076pt x 92.43132pt>
+File: ris/task2_out.pdf Graphic file (type pdf)
+<use ris/task2_out.pdf>
+Package pdftex.def Info: ris/task2_out.pdf  used on input line 111.
+(pdftex.def)             Requested size: 216.23764pt x 204.17738pt.
+
 
 Package Fancyhdr Warning: \headheight is too small (14.0pt): 
  Make it at least 17.0pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[2]) (./problems/problem3_grew.tex
+[4 <./ris/task2_out.pdf>])
 
 Package Fancyhdr Warning: \headheight is too small (14.0pt): 
  Make it at least 17.0pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[3]
+[5] (./problems/problem3_grew.tex
 
 Package Fancyhdr Warning: \headheight is too small (14.0pt): 
  Make it at least 17.0pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[4])
+[6])
 
 Package Fancyhdr Warning: \headheight is too small (14.0pt): 
  Make it at least 17.0pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[5]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 126.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 126.
+[7]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 129.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 129.
  (./problems.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 126.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 126.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 129.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 129.
 Package rerunfilecheck Info: File `problems.out' has not changed.
 (rerunfilecheck)             Checksum: 3B048A90911244E8D2111AB5018D4841;1064.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 126.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 129.
  ) 
 Here is how much of TeX's memory you used:
- 32651 strings out of 492639
- 576299 string characters out of 6133087
- 724219 words of memory out of 5000000
- 36089 multiletter control sequences out of 15000+600000
+ 32745 strings out of 492639
+ 577602 string characters out of 6133087
+ 726647 words of memory out of 5000000
+ 36169 multiletter control sequences out of 15000+600000
  543565 words of font info for 51 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,18n,65p,615b,622s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1282,10 +1320,10 @@ bx2074.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb
 ><c:/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb><c:/texli
 ve/2018/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb><c:/texlive/2018/te
 xmf-dist/fonts/type1/public/boondox/zxxrl8a.pfb>
-Output written on problems.pdf (5 pages, 189435 bytes).
+Output written on problems.pdf (7 pages, 212695 bytes).
 PDF statistics:
- 141 PDF objects out of 1000 (max. 8388607)
- 108 compressed objects within 2 object streams
- 13 named destinations out of 1000 (max. 500000)
- 73 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 190 PDF objects out of 1000 (max. 8388607)
+ 148 compressed objects within 2 object streams
+ 18 named destinations out of 1000 (max. 500000)
+ 88 words of extra memory for PDF output out of 10000 (max. 10000000)
 
