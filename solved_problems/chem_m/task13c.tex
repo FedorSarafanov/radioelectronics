@@ -1,0 +1,34 @@
+\documentclass[border=1pt]{standalone}
+\usepackage[europeanresistors,americaninductors]{circuitikz}
+\tikzset{
+  pics/carc/.style args={#1:#2:#3}{
+    code={
+      \draw[pic actions] (#1:#3) arc(#1:#2:#3);
+    }
+  }
+}
+
+\begin{document}
+	
+      \begin{circuitikz}[scale=0.5]
+      \draw (0,0) to [short,o-,R, l^={$R$}](4,0);
+
+      \draw (0,-2) node  {$U_{in}$};
+      \draw (7,-2) node  {$U_{out}$};
+
+      % \draw[thick] (2,-2) pic[red, latex-]{carc=-150:150:.5cm} node {$I$};
+      % \draw[thick] (6,-2) pic[red, -latex]{carc=-150:150:1.3cm} node {$J_2$};
+      % \draw[thick] (10,-2) pic[red, -latex]{carc=-150:150:1.3cm} node {$J_3$};
+
+      \draw (0,-4) to [short,o-](4,-4);
+      % to  [short,*-](8,-4)
+      % to  [short,*-](12,-4)
+      % to  [short,-o] (14,-4);
+
+      \draw (4,0) to [C=$C$](4,-4);
+      % \draw (8,0) to [R=$R$](8,-4);
+      \draw (4,0) to [short,-o](7,0);
+      \draw (4,-4) to [short,-o](7,-4);
+
+      \end{circuitikz}
+\end{document}
