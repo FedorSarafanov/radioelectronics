@@ -51,10 +51,10 @@
 			% ymin = 7,				% маКсимумы и минимумы осей на графиКе
 			% ymax = 1.2,
 			% ymax = 0.28,
-			% ymin = -0.01,
 			% enlargelimits=false,
 			% ymin = 7,	
-			% xmax = 8,
+			ymin = -0.3,
+			ymax= 1.5,
 			% xmin=-2,
 			% xmax=7.5,
 			% ymin=-2.1,
@@ -66,6 +66,10 @@
 			yticklabels={},
 			xtick=\empty,
 			ytick=\empty,
+    		x label style={
+    		at={(current axis.right of origin)}, 
+            xshift=1ex, anchor=center
+    		},
 			disabledatascaling,
 			% ymin={-11/16},
 			% extra y ticks={-9/16,-6/16},	% доПолнительные метКи на осях

@@ -1,5 +1,16 @@
 \documentclass[border=1pt]{standalone}
 \usepackage[europeanresistors,americaninductors]{circuitikz}
+\usepackage{cmap}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8x]{inputenc}
+\usepackage[russian]{babel}
+\usepackage
+  {
+    % Дополнения Американского математического общества (AMS)
+    amssymb,
+    amsfonts,
+    amsmath
+  }
 \tikzset{
   pics/carc/.style args={#1:#2:#3}{
     code={
@@ -13,8 +24,8 @@
       \begin{circuitikz}[scale=0.5]
       \draw (0,0) to [short,o-,capacitor, l^={$C$}](4,0);
 
-      \draw (0,-2) node  {$U_{in}$};
-      \draw (7,-2) node  {$U_{out}$};
+      \draw (0,-2) node  {$u_\text{вх}$};
+      \draw (7,-2) node  {$u_\text{вых}$};
 
       \draw[thick] (2,-2) pic[red, latex-]{carc=-150:150:.5cm} node {$I$};
       % \draw[thick] (6,-2) pic[red, -latex]{carc=-150:150:1.3cm} node {$J_2$};

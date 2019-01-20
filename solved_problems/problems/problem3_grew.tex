@@ -1,20 +1,4 @@
 %!TEX root = ../problems.tex
-\begin{figure}[h!]
-\centering
-\begin{minipage}{0.4\textwidth}
-\centering
-\includegraphics[width=\linewidth]{chem/task3}
-\caption{$RL$--контур}
-\label{fig:2figsA}
-\end{minipage}
-\qquad
-\begin{minipage}{0.4\textwidth}
-\centering
-\includegraphics[width=\linewidth]{ris/task2_input}
-\caption{Входное напряжение}
-\label{fig:2figsB}
-\end{minipage}
-\end{figure}
 \begin{task}
 	Определите отклик $u_\out(t)$ $RL$-цепи, изображенной на рисунке, на воздействие единичного импульса длительностью $\tau$. 
 	Нарисуйте график отклика. 
@@ -22,6 +6,18 @@
 	При выполнении какого условия будет осуществляться приближённое дифференцирование входной цепи?
 	Решить задачу с ненулевыми начальными условиями.
 \end{task}
+\begin{figure}[ht]
+  \centering
+  \begin{subfigure}[b]{0.5\linewidth}
+    \centering\includegraphics[scale=2]{ris/task2_input}
+    % \caption{\label{fig:fig2}}
+  \end{subfigure}%
+  \begin{subfigure}[b]{0.5\linewidth}
+    \centering\includegraphics[scale=2]{chem/task3}
+    % \caption{\label{fig:fig1}}
+  \end{subfigure}%
+  \caption{Входной импульс и схема $RL$--цепи}
+\end{figure}
 \begin{proof}[\rm{\textbf{Решение}}]
 Найдем образ входного импульса преобразованием Лапласа: 
 \begin{equation}

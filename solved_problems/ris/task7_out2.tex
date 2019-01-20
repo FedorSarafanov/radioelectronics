@@ -20,7 +20,7 @@
 			%%%%%%%%%%%%%%%%%%%%%%%%%%%%% НАСТРОЙКИ ГРАФИКА %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 			% height=4.5cm,
 			% width=10.5cm,
-			scale=0.4,
+			scale=0.5,
 			% grid=both, 				% вКлючаем отоБражение сетКи на графиКе
 			%
 			xlabel={$\omega$}, 			% ПодПись оси Y
@@ -42,10 +42,10 @@
 			minor y tick num=0,		% Количество Промежуточных линий между основными
 			%
  			ticklabel style={
- 				scale=0.95			% уменьшим размер ПодПисей метоК на осях
+ 				scale=0.85			% уменьшим размер ПодПисей метоК на осях
  			},    
  			%
- 			ticks=none,
+ 			% ticks=none,
 	    	axis lines=middle, 		% выравнивание оси y:  middle (в нуле)|left|right
 	    	%
 			% ymin = 7,				% маКсимумы и минимумы осей на графиКе
@@ -62,10 +62,10 @@
 			%
 			% xtick distance=1,		% расстояние между метКами По оси X
 			% ytick distance=1/50,		% расстояние между метКами По оси Y
-			xticklabels={},
-			yticklabels={},
-			xtick=\empty,
-			ytick=\empty,
+			% xticklabels={},
+			% yticklabels={},
+			% xtick=\empty,
+			% ytick=\empty,
 			disabledatascaling,
 			% ymin={-11/16},
 			% extra y ticks={-9/16,-6/16},	% доПолнительные метКи на осях
@@ -93,13 +93,13 @@
 			% },
     		y label style={
     			% at={(axis description cs:0.01,1.07)},
-    			yshift=0.5em,
+    			yshift=0.9em,
     			anchor=center,		% расПоложение метКи ровно в точКе (0,1.1)
     			black				% цвет метКи
     		},		
     		x label style={
     		at={(current axis.right of origin)}, 
-            xshift=1ex, anchor=center
+            xshift=1.2ex, anchor=center
     		},
     		restrict y to domain =0:10,
 			%							

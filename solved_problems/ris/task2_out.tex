@@ -53,7 +53,8 @@
 			% ymax = 0.28,
 			% ymin = -0.01,
 			% enlargelimits=false,
-			% ymin = 7,	
+			ymin = -0.2,
+			ymax=1.5,	
 			% xmax = 8,
 			% xmin=-2,
 			% xmax=7.5,
@@ -97,6 +98,10 @@
     			anchor=center,		% расПоложение метКи ровно в точКе (0,1.1)
     			black				% цвет метКи
     		},			
+    		x label style={
+    		at={(current axis.right of origin)}, 
+            xshift=1ex, anchor=center
+    		},
 			%							
 			%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%s%%%%%%%%%%%%%%%%%%%%
 			% stressstrainset

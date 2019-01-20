@@ -1,15 +1,15 @@
 %!TEX root = ../problems.tex
-\begin{figure}[h!]
-	\centering
-	\includegraphics[width=0.4\linewidth]{ris/task15_input}
-	\caption{Входное напряжение}
-	\label{fig:15.1}
-\end{figure}
+
 
 \begin{task}
 	Найти спектр сигнала, изображенного на рисунке. Нарисовать график $\abs{S(\omega)}$
 \end{task}
-
+\begin{figure}[h!]
+	\centering
+	\includegraphics[scale=2]{ris/task15_input}
+	\caption{Входное напряжение}
+	\label{fig:15.1}
+\end{figure}
 \begin{proof}[\rm{\textbf{Решение}}]
 	Зададим функцию с рисунка, а затем продифференцируем её:
 	$$S(t)=A[\H(t+\tau)-\H(t)]+A[\H(t-\tau)-\H(t)]$$
@@ -40,7 +40,7 @@
 	\end{equation}
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.7\linewidth]{ris/task15_out}
+	\includegraphics[scale=2]{ris/task15_out}
 	\caption{Решение при $A=1,\tau=1$}
 	\label{fig:15.2}
 \end{figure}

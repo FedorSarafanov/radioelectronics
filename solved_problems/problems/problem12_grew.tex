@@ -1,20 +1,4 @@
 %!TEX root = ../problems.tex
-\begin{figure}[h!]
-\centering
-\begin{minipage}{0.55\textwidth}
-\centering
-\includegraphics[width=\linewidth]{ris/task12_in}
-\caption{Входное напряжение}
-\label{fig:4figsB}
-\end{minipage}
-\qquad
-\begin{minipage}{0.35\textwidth}
-\centering
-\includegraphics[width=\linewidth]{chem/task2}
-\caption{$RL$--контур}
-\label{fig:4figsA}
-\end{minipage}
-\end{figure}
 
 \begin{task}
 	Определить отклик $u_\out(t)$ $RL$-цепи, изображенной на рисунке, на воздействие двух прямоугольных импульсов длительностью $\tau$. 
@@ -23,6 +7,19 @@
 	При выполнении какого условия будет осуществляться приближённое интегрирование входной цепи?
 	Решить задачу с ненулевыми начальными условиями.
 \end{task}
+\begin{figure}[ht]
+  \centering
+  \begin{subfigure}[b]{0.5\linewidth}
+    \centering\includegraphics[scale=2]{ris/task12_in}
+    \vspace{2em}
+    % \caption{\label{fig:fig2}}
+  \end{subfigure}%
+  \begin{subfigure}[b]{0.5\linewidth}
+    \centering\includegraphics[scale=2]{chem/task2}
+    % \caption{\label{fig:fig1}}
+  \end{subfigure}%
+  \caption{Входной импульс и схема $RL$--цепи}
+\end{figure}
 \begin{proof}[\rm{\textbf{Решение}}]
 Найдем образ входного импульса преобразованием Лапласа: 
 \begin{equation}
@@ -70,8 +67,8 @@
 \end{gather}
 \begin{figure}[h!]
 	\centering
-	\includegraphics[scale=1.6]{ris/task12_out2}
-	\caption{Решение при $A=1, i_0R=0.5, \tau=5, R/L=4, \tau=1$}
+	\includegraphics[scale=2]{ris/task12_out2}
+	\caption{Решение при $A=1, i_0R=0.5, R/L=4, \tau=1$}
 	\label{fig:12.2}
 \end{figure}
 Произведем преобразование:

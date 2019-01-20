@@ -1,13 +1,13 @@
 %!TEX root = ../problems.tex
 \begin{task}
-	Найти спектр прямоугольного сигнала $S(t)=A\qty(-\H(t)+\H(t-t_1))$.
+	Найти спектр прямоугольного сигнала $S(t)=A\big(-\H(t)+\H(t-t_1)\big)$.
 	Нарисовать график $\abs{S(\omega)}$.
 \end{task}
 
 \begin{proof}[\rm{\textbf{Решение}}]
 	Продифференцируем $S(t)$:
 	\begin{equation}
-		\dv{S}{t}=A(-\delta(t)+\delta(t-t_1))
+		\dv{S}{t}=A\big(-\delta(t)+\delta(t-t_1)\big)
 	\end{equation}
 	По свойству дифференцирования преобразования Фурье:
 	\begin{equation}
@@ -16,8 +16,8 @@
 			S(\omega)=\frac{S'(\omega)}{i \omega}
 	\end{equation}
 	\begin{gather*}
-		S'(\omega)=A\newint (\delta(t-t_1)-\delta(t))e^{-i \omega t} \dd{t}
-			=A(-1 +e^{-i \omega t}) = A(e^{-i \omega t} -1)
+		S'(\omega)=A\newint \big(\delta(t-t_1)-\delta(t)\big)e^{-i \omega t} \dd{t}
+			=A\big(-1 +e^{-i \omega t}\big) = A\big(e^{-i \omega t} -1\big)
 	\end{gather*}
 	Получаем:
 	\begin{equation}

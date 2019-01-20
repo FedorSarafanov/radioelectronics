@@ -1,5 +1,16 @@
-\documentclass[border=1pt]{standalone}
+\documentclass[border=0pt]{standalone}
 \usepackage[europeanresistors,americaninductors]{circuitikz}
+\usepackage{cmap}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8x]{inputenc}
+\usepackage[russian]{babel}
+\usepackage
+  {
+    % Дополнения Американского математического общества (AMS)
+    amssymb,
+    amsfonts,
+    amsmath
+  }
 \tikzset{
   pics/carc/.style args={#1:#2:#3}{
     code={
@@ -10,17 +21,18 @@
 
 \begin{document}
 	
-      \begin{circuitikz}[scale=0.7]
-      \draw (-2,0) to [short,o-](1,0);
+      \begin{circuitikz}[scale=0.5]
+      \draw (-1,0) to [short,o-](1,0);
       \draw (1,1) to [C=$C$](4,1);
-      \draw (1,-1) to [R,l_=$R$](4,-1);
+      \draw (1,-1) to [R](4,-1);
+      \draw[draw=none] (1,-1) -- node[below,yshift=-0.5em] {$R$} (4,-1);
 
-      \draw (-2,-2) node  {$U_{in}$};
-      \draw (7,-2) node  {$U_{out}$};
+      \draw (-1,-2) node  {$u_\text{вх}$};
+      \draw (7,-2) node  {$u_\text{вых}$};
       \draw (1,-1) to (1,1);
       \draw (4,-1) to (4,1);
 
-      \draw (-2,-4) to [short,o-](4,-4);
+      \draw (-1,-4) to [short,o-](4,-4);
 
 
       \draw (5,0) to [L,l_=$L$](5,-4);
