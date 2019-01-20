@@ -346,6 +346,9 @@ INPUT ./ris/task4_out.pdf
 INPUT ./ris/task4_out.pdf
 INPUT problems/problem5_grew.tex
 INPUT problems/problem5_grew.tex
+INPUT ris/task5_out.pdf
+INPUT ./ris/task5_out.pdf
+INPUT ./ris/task5_out.pdf
 INPUT problems.aux
 INPUT ./problems.out
 INPUT ./problems.out

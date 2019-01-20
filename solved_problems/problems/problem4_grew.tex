@@ -44,9 +44,9 @@
 После простых алгебраических преобразований получим:
 \begin{equation}
 	I(p)=
-	\frac{\frac ER }{p+\frac{1}{CR}}-
-	\frac{\frac ER e^{-p\tau}}{p+\frac{1}{CR}}-
-	\frac{\frac{u_0}R}{p+\frac{1}{CR}}
+	\frac{\frac ER }{p+\frac{1}{RC}}-
+	\frac{\frac ER e^{-p\tau}}{p+\frac{1}{RC}}-
+	\frac{\frac{u_0}R}{p+\frac{1}{RC}}
 \end{equation}
 Используем свойства преобразования Лапласа:
 \begin{gather}
@@ -56,7 +56,7 @@
 \end{gather}
 Произведем преобразование:
 \begin{gather}
-	I(t)=(E-u_0)\frac{\H(t)}{R}\exp{-\frac{t}{CR}}-\frac ER \exp{-\frac{t- \tau	}{CR}}\H(t-\tau )
+	I(t)=(E-u_0)\frac{\H(t)}{R}\exp{-\frac{t}{RC}}-\frac ER \exp{-\frac{t- \tau	}{RC}}\H(t-\tau )
 \end{gather}
 
 Воспользуемся соотношением $u\out=I(t)R$ и окончательно получилим ответ: при воздействии прямоугольным импульсом $u_\in(t)$ амплитуды $E$ и длительностью $\tau$, на выходе получаем
@@ -68,7 +68,7 @@
 \end{figure}
 
 \begin{equation}
-	u(t)=(E-u_0)\H(t)\exp{-\frac{t}{CR}}-E \exp{-\frac{t- \tau	}{CR}}\H(t-\tau )
+	u(t)=(E-u_0)\H(t)\exp{-\frac{t}{RC}}-E \exp{-\frac{t- \tau	}{RC}}\H(t-\tau )
 \end{equation} 
 График решения при $E=1, u_0=0.5, \tau=5$ изображен на рис. \ref{fig:4.2}
 
@@ -81,22 +81,22 @@
 Продифференцируем это выражение:
 \begin{equation}
 	\dv{u_\in}{t}=
-	\frac{1}{CR}\underbrace{IR}_{u_R\equiv u_\out}+
+	\frac{1}{RC}\underbrace{IR}_{u_R\equiv u_\out}+
 	\underbrace{\dv{I}{t}R}_{\dv{u_R}{t}}
 \end{equation}
 Если будет выполнено условие
 \begin{equation}
-	\abs{\dv{u_R}{t}} \ll \abs{\frac{1}{CR} u_R}
+	\abs{\dv{u_R}{t}} \ll \abs{\frac{1}{RC} u_R}
 \end{equation}
 Тогда будет видно, что цепочка осуществляет дифференцирование:
 \begin{equation}
-	u_\out=CR\dv{u_\in}{t}=\tau_{\text{цепи}}\dv{u_\in}{t}
+	u_\out=RC\dv{u_\in}{t}=\tau_{\text{цепи}}\dv{u_\in}{t}
 \end{equation}
 
 
 
 
-Выясним смысл неравенства модулей на примере гармонических сигналов. Пусть входное напряжение гармоническое $u_\in=u_0e^{i\omega t}$. Тогда ток в контуре: $I=I_0 e^{i\omega t}$, где $I_0=\frac{u_0}{\frac{1}{i \omega C}+R}$, и неравенство можно переписать (учтем, что $u_C=\frac{I}{i \omega C}=\frac{Ie^{i \omega t}}{i \omega C}$):
+Выясним смысл неравенства модулей на примере гармонических сигналов. Пусть входное напряжение гармоническое $u_\in=u_0e^{i\omega t}$. Тогда ток в контуре: $I=I_0 e^{i\omega t}$, где $I_0=\frac{u_0}{\frac{1}{i \omega C}+R}$, и неравенство можно переписать (учтем, что $u_C=\frac{I}{i \omega C}=\frac{I_0e^{i \omega t}}{i \omega C}$):
 \begin{equation}
 	\abs{ I_0R \cdot i\omega\cdot e^{i\omega t}}\ll
 		\abs{\frac{1}{\tau_\text{цепи}}{I_0}R \cdot e^{i\omega t}}
