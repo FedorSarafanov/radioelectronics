@@ -55,7 +55,11 @@
 \end{equation}
 Отсюда можем получить напряжение на выходе:
 \begin{equation}
+<<<<<<< Updated upstream
 	u_\out(p)=I(p)\cdot R=
+=======
+	u_\out(p)=
+>>>>>>> Stashed changes
 	\frac{A\frac RL }{p+\frac{R}{L}}-
 	\frac{A\frac RL e^{-p\tau}}{p+\frac{R}{L}}+
 	\frac{A\frac RL e^{-2p\tau}}{p+\frac{R}{L}}-
@@ -68,8 +72,15 @@
 	\frac{1}{(p+\alpha)}\LT e^{-\alpha t}\H(t)\\
 	e^{{-p\tau}}F(p) \LT f(t-\tau)\H(t-\tau), \qq{где} F(p) \LT f(t)
 \end{gather}
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.7\linewidth]{ris/task12_out}
+	\caption{Решение при $A=1, i_0R=0.5, \tau=5, R/L=4, \tau=1$}
+	\label{fig:12.2}
+\end{figure}
 Произведем преобразование:
 \begin{gather}
+<<<<<<< Updated upstream
 	u_\out (t)=
 		A \bigg\{ 
 			\qty(1-e^{-\frac{R}{L}t})\H(t)-
@@ -78,15 +89,14 @@
 			\qty(1-e^{-\frac{R}{L}(t- 3\tau)})\H(t- 3\tau)
 		\bigg\}+
 	i_0Re^{-\frac{R}{L}t}\H(t)
+=======
+	u(t)=A [ 
+	(1-e^{-\frac{R}{L}t})\H(t)-(1-e^{-\frac{R}{L}(t- \tau)})\H(t- \tau)+(1-e^{-\frac{R}{L}(t- 2\tau)})\H(t- 2\tau)-\\
+	(1-e^{-\frac{R}{L}(t- 3\tau)})\H(t- 3\tau)]+i_0Re^{-\frac{R}{L}t}\H(t)
+>>>>>>> Stashed changes
 \end{gather}
 
 
-\begin{figure}[h!]
-	\centering
-	\includegraphics[width=0.7\linewidth]{ris/task12_out}
-	\caption{Решение при $A=1, i_0R=0.5, \tau=5, R/L=4, \tau=1$}
-	\label{fig:12.2}
-\end{figure}
 
 \begin{equation}
 	u(t)=(E-u_0)\H(t)\exp{-\frac{t}{CR}}-E \exp{-\frac{t- \tau	}{CR}}\H(t-\tau )
