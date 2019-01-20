@@ -18,13 +18,13 @@
 	\begin{tikzpicture}
 		\begin{axis}[
 			%%%%%%%%%%%%%%%%%%%%%%%%%%%%% НАСТРОЙКИ ГРАФИКА %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-			% height=7.5cm,
+			% height=4.5cm,
 			% width=10.5cm,
-			scale=0.5,
+			scale=0.4,
 			% grid=both, 				% вКлючаем отоБражение сетКи на графиКе
 			%
-			xlabel={$t$}, 			% ПодПись оси Y
-			ylabel={$S(t)$}, 			% ПодПись оси X
+			xlabel={$\omega$}, 			% ПодПись оси Y
+			ylabel={$|K(\omega)|$}, 			% ПодПись оси X
 			%
 			major grid style={
 				line width=0.5pt, 	% толщина основных линий сетКи
@@ -49,15 +49,15 @@
 	    	axis lines=middle, 		% выравнивание оси y:  middle (в нуле)|left|right
 	    	%
 			% ymin = 7,				% маКсимумы и минимумы осей на графиКе
-			% ymax = 1.2,
+			ymax = 1.6,
 			% ymax = 0.28,
 			% ymin = -0.01,
-			% enlargelimits=false,
+			enlargelimits=true,
 			% ymin = 7,	
 			% xmax = 8,
 			% xmin=-2,
-			% xmax=7.5,
-			% ymin=-2.1,
+			% ymax=1.5,
+			% ymin=-0.2,
 			% ymax=2.8,
 			%
 			% xtick distance=1,		% расстояние между метКами По оси X
@@ -74,7 +74,7 @@
 			% 		{$U_{min}$}, {$U_{min}+\Delta U$}
 			% 	}, 					
 			%
-			unit vector ratio = 1 1,% масштаБ 1:1 осей X и Y
+			% unit vector ratio = 1 1,% масштаБ 1:1 осей X и Y
 			% x={(1cm/1.3,0cm)}, y={(0cm,50cm/1.3)},
 			%
 			% x axis line style ={draw=none},
@@ -96,14 +96,18 @@
     			yshift=0.5em,
     			anchor=center,		% расПоложение метКи ровно в точКе (0,1.1)
     			black				% цвет метКи
-    		},			
+    		},		
+    		x label style={
+    		at={(current axis.right of origin)}, 
+            xshift=1ex, anchor=center
+    		},
+    		restrict y to domain =0:10,
 			%							
 			%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%s%%%%%%%%%%%%%%%%%%%%
 			% stressstrainset
 		]
-		
 
-		\addplot[domain={-2:2},samples=700] {(x<-1?0:1)-(x<0?0:1)+(x<1?0:1)-(x<0?0:1)} node[pos=.4, right, yshift=0.5em]{A} node[pos=0.1, below, yshift=0.1em]{$-\tau$} node[pos=0.9, below]{$\tau$}; 
+		\addplot[domain={0:10},samples=700] plot {sqrt((1+1/x^2)/(1/x^2+(1/x^2-1)^2))};% node[pos=.5, above]{$\sqrt\pi A\tau$};% node[pos=.8, below]{$\tau$}; 
 
      \end{axis}
 	\end{tikzpicture}	
