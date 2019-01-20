@@ -24,7 +24,7 @@
 			% grid=both, 				% вКлючаем отоБражение сетКи на графиКе
 			%
 			xlabel={$t$}, 			% ПодПись оси Y
-			ylabel={$u_\text{t}$}, 			% ПодПись оси X
+			ylabel={$u(t)$}, 			% ПодПись оси X
 			%
 			major grid style={
 				line width=0.5pt, 	% толщина основных линий сетКи
@@ -51,10 +51,10 @@
 			% ymin = 7,				% маКсимумы и минимумы осей на графиКе
 			% ymax = 1.2,
 			% ymax = 0.28,
-			% ymin = -0.01,
+			ymin = -1.5,
 			% enlargelimits=false,
-			% ymin = 7,	
-			% xmax = 8,
+			ymax = 3,	
+			xmax = 8,
 			% xmin=-2,
 			% xmax=7.5,
 			% ymin=-2.1,
@@ -93,22 +93,26 @@
 			% },
     		y label style={
     			% at={(axis description cs:0.01,1.07)},
-    			yshift=0.5em,
+    			yshift=0.7em,
     			anchor=center,		% расПоложение метКи ровно в точКе (0,1.1)
     			black				% цвет метКи
-    		},			
+    		},		
+    		x label style={
+    		at={(current axis.right of origin)}, 
+            xshift=1.2ex, anchor=center
+    		},	
 			%							
 			%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%s%%%%%%%%%%%%%%%%%%%%
 			% stressstrainset
 		]
 		
 		%\addplot[domain={-3:5},samples=700] {1*(x<-1?0:1)*(x>1?0:2)} node[pos=.4, left]{E} {1*(x>2?0:2)*(x>3?0:2)}  node[pos=.8, below]{$\tau$}; 
-		\addplot [domain = {-5:5},samples = 700,thick] 
+		\addplot [domain = {-5:5},samples = 700] 
 		coordinates{(-2,0) (-1,0) (-1,2) (1,2) (1,0) (3,0) (3,2) (5,2) (5,0) (7,0)}
 		;
-		\node (none) at (-1,2.5) {$E$};
+		\node[scale=0.8, left] (none) at (-1,2) {$E$};
 		\node(nine) at (1,-0.75) {$\frac{\tau}{2} $};
-		\node(nine) at (-1,-0.75) {$-\frac{\tau}{2} $};
+		\node(nine) at (-1.25,-0.75) {$-\frac{\tau}{2} $};
 		\node(nine) at (3,-0.75) {$\frac{3\tau}{2} $};
 		\node(nine) at (5,-0.75) {$\frac{5\tau}{2} $};
 		\draw[thick,<->] (1.2,1) -- (2.8,1);
