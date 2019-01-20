@@ -22,6 +22,7 @@
 		% multicol,
 		tikz,
 		% wrapfig,
+		setspace,
 		caption,
 		subcaption
 	}  
@@ -88,8 +89,9 @@
 % №№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№
 
 
-% \input{text/titlepage}
-
+\input{text/titlepage}
+\tableofcontents
+\newpage
 
 \section{Таблица простейших преобразований Лапласа}
 \begin{center}
@@ -113,44 +115,21 @@
 \end{tabular}
 \end{center}
 \newpage
-\section{Типовые задачи по радиоэлектронике}
-
-\subsection{Задача №1}
-\input{problems/problem1_grew}
-\newpage
-
-\subsection{Задача №2}
-\input{problems/problem2_grew}
-\newpage
-
-\subsection{Задача №3}
-\input{problems/problem3_grew}
-\newpage
-
-\subsection{Задача №4}
-\input{problems/problem4_grew}
-\newpage
-
-\subsection{Задача №5}
-\input{problems/problem5_grew}
-\newpage
 
 
-\subsection{Задача №7}
-\input{problems/problem7_grew}
-\newpage
+\section{Задачи на преобразование Лапласа}
+\subsection{Задача №2} \input{problems/problem2_grew} \newpage
+\subsection{Задача №3} \input{problems/problem3_grew} \newpage
+\subsection{Задача №4} \input{problems/problem4_grew} \newpage
+\subsection{Задача №12} \input{problems/problem12_grew} \newpage
 
-\subsection{Задача №9}
-\input{problems/problem9_grew}
-\newpage
+\section{Задачи на преобразование Фурье}
+\subsection{Задача №1} \input{problems/problem1_grew} \newpage
+\subsection{Задача №5} \input{problems/problem5_grew} \newpage
+\subsection{Задача №9} \input{problems/problem9_grew} \newpage
+\subsection{Задача №15} \input{problems/problem15_grew}  \newpage
 
-\subsection{Задача №12}
-\input{problems/problem12_grew}
-\newpage
-
-\subsection{Задача №15}
-\input{problems/problem15_grew}
-% \newpage
-
+\section{Задачи на поиск коэффициента передачи}
+\subsection{Задача №7} \input{problems/problem7_grew} \newpage
 
 \end{document}
